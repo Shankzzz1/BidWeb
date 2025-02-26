@@ -5,6 +5,7 @@ const Navbar = () => {
     <div>
       Hello Users 
       This is Navbar
+      Testing it
     </div>
   )
 }
