@@ -9,7 +9,6 @@ import ProductDetailPage from './Components/ProductDetailPage.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <FastrackAuctionPage />
-    <ProductDetailPage/>
+    <App/>
   </StrictMode>,
 )
