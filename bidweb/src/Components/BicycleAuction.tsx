@@ -49,6 +49,7 @@ const BicycleAuction = () => {
     const newBid = currentBid + 100;
     setCurrentBid(newBid);
   };
+  
 
   return (
     <div className="max-w-md mx-auto bg-white rounded-lg overflow-hidden shadow-md">
