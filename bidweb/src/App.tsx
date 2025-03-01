@@ -5,6 +5,7 @@ import Login_and_Signup from "./Components/Login_and_Signup";
 import FastrackAuctionPage from "./Components/FastrackAuctionPage";
 import BicycleAuction from "./Components/BicycleAuction";
 import About from "./Components/About";
+import ContactPage from "./Components/ContactPage"
 export default function App() {
   return (
     <Router>
@@ -15,7 +16,7 @@ export default function App() {
         <Route path="/prodinfo" element={<FastrackAuctionPage/>} />
         <Route path="/product" element={<BicycleAuction/>} />
         <Route path="/about" element={<About/>} />
-
+        <Route path="/contact" element={<ContactPage/>} />
       </Routes>
     </Router>
   )
