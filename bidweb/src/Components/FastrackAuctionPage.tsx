@@ -14,6 +14,7 @@ interface AuctionData {
   currentBid: string;
 }
 
+
 const FastrackAuctionPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'info' | 'bidding' | 'delivery'>('info');
   
@@ -51,11 +52,11 @@ const FastrackAuctionPage: React.FC = () => {
             </svg>
           </button>
         </div>
-        <div className="ml-2 flex-1 flex items-center">
+        {/* <div className="ml-2 flex-1 flex items-center">
           <div className="flex-1 bg-white border border-gray-300 rounded-md py-1 px-2 text-sm text-gray-500 flex items-center">
             bidderboy.com/ProductDetail?id=6biV7m8SRzi9Lhpt3s9gpA==
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Main content */}
@@ -77,7 +78,7 @@ const FastrackAuctionPage: React.FC = () => {
             <div className="flex">
               <div className="border border-gray-300 w-16 h-16 cursor-pointer">
                 <img 
-                  src="/smartwatch-thumb.jpg" 
+                  src="https://www.bidderboy.com/images/Product/202412154843_fasttrack-smartwatch.jpg" 
                   alt="Thumbnail" 
                   className="w-full h-full object-cover"
                   onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {

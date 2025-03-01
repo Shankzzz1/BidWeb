@@ -37,6 +37,7 @@ interface ProductData {
   itemWeight: string;
 }
 
+
 const ProductDetailPage = () => {
   const productData: ProductData = {
     title: "Fastrack Limitless Valor Rugged Smartwatch|Large 1.91\" Super UltraVU Display|Functional Crown|Highest 320x385 Pixel Resolution|SingleSync BT Calling|100+ Sports Modes & Watchfaces|IP68",
