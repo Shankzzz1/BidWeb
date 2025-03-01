@@ -112,7 +112,7 @@ const About = () => {
 
   return (
     <>
-      <div className="text-center">
+      <div className="text-center font-sans">
         <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-2">About Us</h1>
       </div>
       <div className="w-full flex flex-col md:flex-row font-sans p-8">
@@ -174,7 +174,7 @@ const About = () => {
                 />
               </div>
               <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-              <p className="text-gray-700 italic">{member.title}</p>
+              <p className="text-black-700 italic">{member.title}</p>
             </div>
           ))}
         </div>
@@ -186,11 +186,11 @@ const About = () => {
           <div className="flex flex-col md:flex-row items-start gap-8">
             {/* Left column with heading and CTA */}
             <div className="w-full md:w-1/4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">Why choose us</h2>
-              <p className="text-gray-600 mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black-800">Why choose us</h2>
+              <p className="text-black-600 mb-8">
               At Biddify, we provide a seamless, fair, and exciting bidding experience that stands out from the rest. Here’s why you should choose us:
               </p>
-              <button className="bg-amber-300 hover:bg-amber-400 text-gray-800 font-medium py-2 px-4 rounded transition duration-200">
+              <button className="bg-amber-300 hover:bg-amber-400 text-black-800 font-medium py-2 px-4 rounded transition duration-200">
                 Start Bidding
               </button>
             </div>
@@ -200,10 +200,10 @@ const About = () => {
               {reasons.map((reason, index) => (
                 <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 relative">
                   <div className="absolute top-0 right-0 left-0 h-24 bg-amber-100 opacity-40 rounded-t-lg"></div>
-                  <h3 className="text-lg font-semibold mb-3 pt-20 text-gray-800">{reason.title}</h3>
-                  <p className="text-gray-600 mb-4">{reason.description}</p>
+                  <h3 className="text-lg font-semibold mb-3 pt-20 text-black-800">{reason.title}</h3>
+                  <p className="text-black-600 mb-4">{reason.description}</p>
                   <div className="flex justify-end">
-                    <button className="text-gray-500 hover:text-amber-500 transition duration-200">
+                    <button className="text-black-500 hover:text-amber-500 transition duration-200">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
