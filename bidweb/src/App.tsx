@@ -8,6 +8,7 @@ import About from "./Components/About";
 import ScrollablePages from './Components/ScrollablePages'
 import ProductDetailPage from "./Components/ProductDetailPage";
 import ProfilePage from "./Components/ProfilePage";
+import ProductPage from "./Components/ProductPage";
 export default function App() {
   return (
     <Router>
@@ -17,7 +18,7 @@ export default function App() {
         <Route path="/login" element={<Login_and_Signup />} />
         <Route path="/prodinfo" element={<FastrackAuctionPage/>} />
         <Route path="/proddetails" element={<ProductDetailPage/>} />
-        <Route path="/Auction" element={<ScrollablePages/>} />
+        <Route path="/productdetails" element={<ScrollablePages/>} />
         <Route path="/product" element={<BicycleAuction/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/account" element={<ProfilePage/>} />
