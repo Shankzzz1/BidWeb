@@ -33,7 +33,7 @@ const AuctionItemsRow: React.FC = () => {
       name: 'Samsung Galaxy S22 Ultra',
       mrp: 109999.00,
       currentBid: 75000.00,
-      image: 'https://www.bidderboy.com/images/Product/smartphone.jpg',
+      image: 'https://m.media-amazon.com/images/I/61KqH7ojMtL._SL1500_.jpg',
       timeLeft: { hours: 0, minutes: 55, seconds: 32 },
       favorites: 12,
       status: 'active'
@@ -44,7 +44,7 @@ const AuctionItemsRow: React.FC = () => {
       name: 'Sony PlayStation 5 Digital Edition',
       mrp: 39990.00,
       currentBid: 32500.00,
-      image: 'https://www.bidderboy.com/images/Product/playstation.jpg',
+      image: 'https://m.media-amazon.com/images/I/51afJC92cgL._SL1000_.jpg',
       timeLeft: { hours: 2, minutes: 15, seconds: 45 },
       favorites: 8,
       status: 'active'
