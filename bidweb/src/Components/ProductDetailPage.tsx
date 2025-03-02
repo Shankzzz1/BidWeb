@@ -37,6 +37,7 @@ interface ProductData {
   itemWeight: string;
 }
 
+
 const ProductDetailPage = () => {
   const productData: ProductData = {
     title: "Fastrack Limitless Valor Rugged Smartwatch|Large 1.91\" Super UltraVU Display|Functional Crown|Highest 320x385 Pixel Resolution|SingleSync BT Calling|100+ Sports Modes & Watchfaces|IP68",
@@ -112,7 +113,7 @@ const ProductDetailPage = () => {
         </div>
         
         <div className="p-4">
-          <div className="text-orange-500 text-sm font-medium">Fastrack Limitless Valor Rugged Smartwatch</div>
+          <div className="text-amber-400 text-sm font-medium">Fastrack Limitless Valor Rugged Smartwatch</div>
           
           <h1 className="text-xl text-gray-700 font-medium my-2">
             {productData.title}

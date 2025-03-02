@@ -3,8 +3,13 @@ import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Login_and_Signup from "./Components/Login_and_Signup";
 import FastrackAuctionPage from "./Components/FastrackAuctionPage";
-
+import BicycleAuction from "./Components/BicycleAuction";
+import About from "./Components/About";
+import ScrollablePages from './Components/ScrollablePages'
+import ProductDetailPage from "./Components/ProductDetailPage";
 import ProductPage from "./Components/ProductPage";
+import ContactPage from "./Components/ContactPage"
+
 export default function App() {
   return (
     <Router>
@@ -13,7 +18,13 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login_and_Signup />} />
         <Route path="/prodinfo" element={<FastrackAuctionPage/>} />
+        <Route path="/proddetails" element={<ProductDetailPage/>} />
+        <Route path="/Auction" element={<ScrollablePages/>} />
+        <Route path="/product" element={<BicycleAuction/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/contact" element={<ContactPage/>} />
         <Route path="/Auction" element={<ProductPage/>} />
+
       </Routes>
     </Router>
   )
