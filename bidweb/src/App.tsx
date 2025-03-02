@@ -21,6 +21,7 @@ export default function App() {
         <Route path="/product" element={<BicycleAuction/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/account" element={<ProfilePage/>} />
+        
 
 
 
