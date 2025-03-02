@@ -51,11 +51,11 @@ const FastrackAuctionPage: React.FC = () => {
             </svg> */}
           </button>
         </div>
-        <div className="ml-2 flex-1 flex items-center">
+        {/* <div className="ml-2 flex-1 flex items-center">
           <div className="flex-1 bg-white border border-gray-300 rounded-md py-1 px-2 text-sm text-gray-500 flex items-center">
             bidderboy.com/ProductDetail?id=6biV7m8SRzi9Lhpt3s9gpA==
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Main content */}
@@ -77,7 +77,7 @@ const FastrackAuctionPage: React.FC = () => {
             <div className="flex">
               <div className="border border-gray-300 w-16 h-16 cursor-pointer">
                 <img 
-                  src="/smartwatch-thumb.jpg" 
+                  src="https://www.bidderboy.com/images/Product/202412154843_fasttrack-smartwatch.jpg" 
                   alt="Thumbnail" 
                   className="w-full h-full object-cover"
                   onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
@@ -91,25 +91,25 @@ const FastrackAuctionPage: React.FC = () => {
 
           {/* Product Details Section */}
           <div className="md:w-1/2 p-4">
-            <h1 className="text-2xl text-gray-700 font-medium mb-6">
+            <h1 className="text-2xl text-black font-medium mb-6">
               {auctionData.productName}
             </h1>
 
             {/* Auction Status Box */}
             <div className="flex flex-wrap mb-6">
               <div className="bg-gray-100 p-4 mr-4 mb-4 rounded">
-                <div className="text-xl text-gray-700 font-medium">{auctionData.auctionStatus}</div>
+                <div className="text-xl text-black font-medium">{auctionData.auctionStatus}</div>
                 <div className="text-xl">After {auctionData.daysUntilOpen} Days</div>
-                <div className="text-orange-500 mt-2">Waiting For Bid</div>
+                <div className="text-amber-400 mt-2">Waiting For Bid</div>
               </div>
               
               <div className="flex flex-col">
                 <div className="bg-white p-4 border border-gray-200 rounded mb-2">
-                  <div className="text-gray-700">
-                    Auction price <span className="text-orange-500 font-medium">{auctionData.currentBid}</span>
+                  <div className="text-black">
+                    Auction price <span className="text-amber-400 font-medium">{auctionData.currentBid}</span>
                   </div>
                 </div>
-                <button className="bg-gray-700 text-white p-2 rounded flex justify-center items-center">
+                <button className="bg-black text-white p-2 rounded flex justify-center items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                   </svg>
@@ -121,19 +121,19 @@ const FastrackAuctionPage: React.FC = () => {
             <div className="mb-4">
               <div className="flex border-b border-gray-200">
                 <button 
-                  className={`px-4 py-2 font-medium ${activeTab === 'info' ? 'text-orange-500 border-b-2 border-orange-500' : 'text-gray-600'}`}
+                  className={`px-4 py-2 font-medium ${activeTab === 'info' ? 'text-amber-400 border-b-2 border-amber-400' : 'text-gray-600'}`}
                   onClick={() => setActiveTab('info')}
                 >
                   Auction Information
                 </button>
                 <button 
-                  className={`px-4 py-2 font-medium ${activeTab === 'bidding' ? 'text-orange-500 border-b-2 border-orange-500' : 'text-gray-600'}`}
+                  className={`px-4 py-2 font-medium ${activeTab === 'bidding' ? 'text-amber-400 border-b-2 border-amber-400' : 'text-gray-600'}`}
                   onClick={() => setActiveTab('bidding')}
                 >
                   Bidding History
                 </button>
                 <button 
-                  className={`px-4 py-2 font-medium ${activeTab === 'delivery' ? 'text-orange-500 border-b-2 border-orange-500' : 'text-gray-600'}`}
+                  className={`px-4 py-2 font-medium ${activeTab === 'delivery' ? 'text-amber-400 border-b-2 border-amber-400' : 'text-gray-600'}`}
                   onClick={() => setActiveTab('delivery')}
                 >
                   Delivery Information

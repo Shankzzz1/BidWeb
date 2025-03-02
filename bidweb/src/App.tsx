@@ -9,6 +9,7 @@ import ScrollablePages from './Components/ScrollablePages'
 import ProductDetailPage from "./Components/ProductDetailPage";
 import ProfilePage from "./Components/ProfilePage";
 import ProductPage from "./Components/ProductPage";
+import ContactPage from "./Components/ContactPage";
 export default function App() {
   return (
     <Router>
@@ -23,9 +24,13 @@ export default function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/account" element={<ProfilePage/>} />
         <Route path="/auction" element={<ProductPage/>} />
+        <Route path="/contact" element={<ContactPage/>} />
 
       
       </Routes>
     </Router>
   )
 }
+
+
+
