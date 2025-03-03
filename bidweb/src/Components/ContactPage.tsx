@@ -68,9 +68,14 @@ const ContactPage: React.FC = () => {
             <div className="w-10 h-10 border border-amber-500 rounded-full flex items-center justify-center text-amber-500 hover:bg-amber-500 hover:text-white transition-colors cursor-pointer">
               <span>📷</span>
             </div>
+            <a
+            href="https://www.linkedin.com/" 
+            target="_blank" 
+            rel="noopener noreferrer">
             <div className="w-10 h-10 border border-amber-500 rounded-full flex items-center justify-center text-amber-500 hover:bg-amber-500 hover:text-white transition-colors cursor-pointer">
               <span>in</span>
             </div>
+            </a>
             <div className="w-10 h-10 border border-amber-500 rounded-full flex items-center justify-center text-amber-500 hover:bg-amber-500 hover:text-white transition-colors cursor-pointer">
               <span>🐦</span>
             </div>
