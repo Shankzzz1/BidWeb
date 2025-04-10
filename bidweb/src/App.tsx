@@ -10,6 +10,7 @@ import ProductDetailPage from "./Components/ProductDetailPage";
 import ProfilePage from "./Components/ProfilePage";
 import ProductPage from "./Components/ProductPage";
 import ContactPage from "./Components/ContactPage";
+//import MyBids from './components/MyBids';
 export default function App() {
   return (
     <Router>
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/account" element={<ProfilePage/>} />
         <Route path="/auction" element={<ProductPage/>} />
         <Route path="/contact" element={<ContactPage/>} />
+        
 
       
       </Routes>
