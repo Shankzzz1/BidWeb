@@ -8,7 +8,7 @@ const AuctionItemsView = () => {
       name: "Leader Scout MTB 26T Mountain Bicycle",
       mrp: 7500.00,
       currentBid: 0.00,
-      imageUrl: "/api/placeholder/200/200",
+      imageUrl: "https://www.bidderboy.com/images/Product/2023424191011_Cycle.jpg",
       timeLeft: "1:43:23",
       bidders: 6,
       status: "Waiting For Bid"
@@ -18,7 +18,7 @@ const AuctionItemsView = () => {
       name: "Royal Enfield Bullet 350 Helmet",
       mrp: 2500.00,
       currentBid: 500.00,
-      imageUrl: "/api/placeholder/200/200",
+      imageUrl: "https://store.royalenfield.com/media/catalog/product/1/_/1_3_1.png?width=550&height=550&canvas=550,550&optimize=high&bg-color=255,255,255&fit=bounds&format=jpeg",
       timeLeft: "2:15:45",
       bidders: 3,
       status: "Current Bid"
@@ -28,7 +28,7 @@ const AuctionItemsView = () => {
       name: "Sony WH-1000XM4 Headphones",
       mrp: 29990.00,
       currentBid: 15000.00,
-      imageUrl: "/api/placeholder/200/200",
+      imageUrl: "https://m.media-amazon.com/images/I/61oqO1AMbdL._SL1500_.jpg",
       timeLeft: "0:45:12",
       bidders: 12,
       status: "Current Bid"
@@ -38,7 +38,7 @@ const AuctionItemsView = () => {
       name: "Samsung Galaxy S21 Ultra",
       mrp: 105000.00,
       currentBid: 65000.00,
-      imageUrl: "/api/placeholder/200/200",
+      imageUrl: "https://m.media-amazon.com/images/I/61KqH7ojMtL._SL1500_.jpg",
       timeLeft: "3:22:09",
       bidders: 8,
       status: "Current Bid"
@@ -48,7 +48,7 @@ const AuctionItemsView = () => {
       name: "Nikon D3500 DSLR Camera",
       mrp: 42990.00,
       currentBid: 25000.00,
-      imageUrl: "/api/placeholder/200/200",
+      imageUrl: "https://m.media-amazon.com/images/I/71jOXH8g+1L._AC_SL1500_.jpg",
       timeLeft: "3:22:09",
       bidders: 10,
       status: "Current Bid"
@@ -73,6 +73,7 @@ const AuctionItemsView = () => {
 
   return (
     <div className="min-h-screen bg-gray-100">
+      <h1 className="text-2xl font-bold mb-6 text-center">Upcoming Auctions</h1>
       {/* Main Content - Horizontal Scrollable Items */}
       <div className="overflow-x-auto">
         <div className="flex space-x-4 min-w-max p-4">

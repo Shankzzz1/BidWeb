@@ -190,9 +190,7 @@ const WatchlistCard: React.FC = () => {
     </div>
   );
 };
-
-// Main App
-const ProfilePage: React.FC = () => {
+const RecentWinsCard: React.FC = () => {
   const recentWins: BidItem[] = [
     {
       title: 'Antique Desk Lamp',
@@ -212,7 +210,50 @@ const ProfilePage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="bg-white rounded-lg shadow-md p-5 w-full">
+      <div className="flex justify-between items-center mb-4">
+        <h3 className="text-lg font-semibold">Recent Wins</h3>
+        <a href="#" className="text-amber-400 font-bold text-sm">View All</a>
+      </div>
+      <div className="space-y-4">
+        {recentWins.map((item, index) => (
+          <div key={index} className="flex bg-gray-100 rounded-lg overflow-hidden p-4">
+            <div className="flex-1">
+              <div className="font-medium">{item.title}</div>
+              {item.details.map((detail, i) => (
+                <div key={i} className="text-sm text-gray-500">{detail}</div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+
+// Main App
+const ProfilePage: React.FC = () => {
+  // const recentWins: BidItem[] = [
+  //   {
+  //     title: 'Antique Desk Lamp',
+  //     details: ['Won for: $78', 'Yesterday'],
+  //     status: 'won',
+  //   },
+  //   {
+  //     title: 'Professional Camera Lens',
+  //     details: ['Won for: $350', 'Last week'],
+  //     status: 'won',
+  //   },
+  //   {
+  //     title: 'Mid-century Modern Chair',
+  //     details: ['Won for: $125', 'Last month'],
+  //     status: 'won',
+  //   },
+  // ];
+
+  return (
+    <div className="min-h-screen bg-amber-50">
       {/* Header component removed */}
       
       <main className="py-10">
@@ -238,7 +279,7 @@ const ProfilePage: React.FC = () => {
               <div className="flex flex-col space-y-8">
                 <ActivityCard />
                 <WatchlistCard />
-                
+                <RecentWinsCard/>
               </div>
             </div>
           </div>

@@ -32,7 +32,7 @@ const ContactPage: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row bg-white text-black min-h-screen w-full font-sans">
+    <div className="flex flex-col md:flex-row bg-amber-50 text-black min-h-screen w-full font-sans">
       {/* Left Section */}
       <div className="md:flex-1 p-6 md:p-10 flex flex-col">
         <h1 className="text-amber-500 text-2xl md:text-3xl mb-6 md:mb-10 font-bold">Get In Touch</h1>
@@ -68,9 +68,14 @@ const ContactPage: React.FC = () => {
             <div className="w-10 h-10 border border-amber-500 rounded-full flex items-center justify-center text-amber-500 hover:bg-amber-500 hover:text-white transition-colors cursor-pointer">
               <span>📷</span>
             </div>
+            <a
+            href="https://www.linkedin.com/" 
+            target="_blank" 
+            rel="noopener noreferrer">
             <div className="w-10 h-10 border border-amber-500 rounded-full flex items-center justify-center text-amber-500 hover:bg-amber-500 hover:text-white transition-colors cursor-pointer">
               <span>in</span>
             </div>
+            </a>
             <div className="w-10 h-10 border border-amber-500 rounded-full flex items-center justify-center text-amber-500 hover:bg-amber-500 hover:text-white transition-colors cursor-pointer">
               <span>🐦</span>
             </div>
@@ -79,8 +84,8 @@ const ContactPage: React.FC = () => {
       </div>
       
       {/* Right Section */}
-      <div className="md:flex-1 p-6 md:p-10 flex items-center justify-center bg-amber-50 md:bg-white">
-        <div className="bg-amber-50 text-black p-6 md:p-8 rounded-lg shadow-md w-full max-w-md">
+      <div className="md:flex-1 p-6 md:p-10 flex items-center justify-center bg-amber-50 md:bg-amber-50">
+        <div className="bg-white text-black p-6 md:p-8 rounded-lg shadow-md w-full max-w-md">
           <h2 className="text-amber-500 text-xl mb-6 text-center font-bold">Contact Form</h2>
           
           <form onSubmit={handleSubmit}>
