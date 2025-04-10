@@ -155,26 +155,24 @@ const About = () => {
         </div>
       </div>
 
-      
-
-
-      <div className="w-full pb-16 px-8 ">
+      {/* Meet Our Team Section - FIXED */}
+      <div className="w-full pb-16 px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black">Meet Our Team</h2>
         </div>
         
-        <div className="flex flex-col md:flex-row justify-center gap-8 space-x-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-6xl mx-auto">
           {teamMembers.map((member, index) => (
             <div key={index} className="flex flex-col items-center">
-              <div className="bg-gray-100 w-56 h-56 mb-4">
+              <div className="bg-gray-100 w-full aspect-square mb-4 overflow-hidden">
                 <img 
                   src={member.image}
                   alt={`${member.name} portrait`}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-              <p className="text-black-700 italic">{member.title}</p>
+              <h3 className="text-xl font-bold mb-1 text-center">{member.name}</h3>
+              <p className="text-black-700 italic text-center">{member.title}</p>
             </div>
           ))}
         </div>
@@ -188,7 +186,7 @@ const About = () => {
             <div className="w-full md:w-1/4">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black-800">Why choose us</h2>
               <p className="text-black-600 mb-8">
-              At Biddify, we provide a seamless, fair, and exciting bidding experience that stands out from the rest. Here’s why you should choose us:
+              At Biddify, we provide a seamless, fair, and exciting bidding experience that stands out from the rest. Here's why you should choose us:
               </p>
               <button className="bg-amber-300 hover:bg-amber-400 text-black-800 font-medium py-2 px-4 rounded transition duration-200">
                 Start Bidding

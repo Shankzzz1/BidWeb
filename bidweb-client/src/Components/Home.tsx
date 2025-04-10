@@ -1,6 +1,6 @@
 import Home1 from "../assets/Home1.jpg";
 import Map from "../assets/Map.png";
-import Footer from "../Components/Footer";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
